@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="919.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javahotelesproyecto.UsuariosController">
+   <children>
+      <ImageView fitHeight="572.0" fitWidth="921.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tipo%20de%20habitacion.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="100.0" layoutY="157.0" prefHeight="304.0" prefWidth="719.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 15;">
+         <children>
+            <PasswordField fx:id="contraseña" layoutX="217.0" layoutY="231.0" prefHeight="25.0" prefWidth="439.0" />
+         </children></Pane>
+      <Label layoutX="287.0" layoutY="87.0" text="Datos del Cliente" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="201.0" prefHeight="17.0" prefWidth="51.0" text="DNI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="415.0" layoutY="201.0" prefHeight="35.0" prefWidth="104.0" text="Nombre" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="261.0" prefHeight="35.0" prefWidth="128.0" text="Apellidos" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="321.0" prefHeight="35.0" prefWidth="135.0" text="Localidad" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="466.0" layoutY="321.0" prefHeight="35.0" prefWidth="128.0" text="Provincia" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dni" layoutX="239.0" layoutY="206.0" />
+      <TextField fx:id="nombre" layoutX="522.0" layoutY="206.0" prefHeight="25.0" prefWidth="227.0" />
+      <TextField fx:id="apellidos" layoutX="307.0" layoutY="266.0" prefHeight="25.0" prefWidth="439.0" />
+      <TextField fx:id="localidad" layoutX="299.0" layoutY="326.0" />
+      <TextField fx:id="provincia" layoutX="592.0" layoutY="326.0" prefHeight="25.0" prefWidth="156.0" />
+      <Button fx:id="enviar" layoutX="397.0" layoutY="494.0" mnemonicParsing="false" onAction="#handleRegistroUsuario" prefHeight="35.0" prefWidth="104.0" stylesheets="@../css/BotonAceptar.css" text="Agregar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="174.0" layoutY="379.0" prefHeight="35.0" prefWidth="135.0" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="atras" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBotonAtras" prefHeight="45.0" prefWidth="89.0" stylesheets="@../css/Atras-Reservas.css" text="Volver" />
+   </children>
+</AnchorPane>

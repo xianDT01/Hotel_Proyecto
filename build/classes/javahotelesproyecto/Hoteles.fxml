@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javahotelesproyecto.HotelesMenuController">
+   <children>
+      <ImageView fitHeight="570.0" fitWidth="848.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tipo%20de%20habitacion.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="92.0" layoutY="143.0" prefHeight="255.0" prefWidth="661.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 15;" />
+      <Label layoutX="252.0" layoutY="73.0" text="Datos del hotel" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="195.0" prefHeight="35.0" prefWidth="121.0" text="Dirección" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="195.0" prefHeight="35.0" prefWidth="115.0" text="Nombre" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="240.0" prefHeight="35.0" prefWidth="182.0" text="Codigo Postal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="direccion" layoutX="543.0" layoutY="200.0" />
+      <TextField fx:id="nombre" layoutX="251.0" layoutY="200.0" />
+      <TextField fx:id="codigoPostal" layoutX="285.0" layoutY="245.0" prefHeight="25.0" prefWidth="408.0" />
+      <Button fx:id="btnaceptar" layoutX="372.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleRegistrarHotel" prefHeight="39.0" prefWidth="104.0" stylesheets="@../css/BotonAceptar.css" text="Aceptar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="114.0" layoutY="291.0" text="Numero de habitaciones" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numerosDeHabitacion" layoutX="407.0" layoutY="296.0" prefHeight="25.0" prefWidth="31.0" />
+      <Button fx:id="atras" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBotonAtras" prefHeight="45.0" prefWidth="87.0" stylesheets="@../css/Atras-Reservas.css" text="Volver">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

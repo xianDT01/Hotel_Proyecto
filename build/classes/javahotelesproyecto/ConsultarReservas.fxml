@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javahotelesproyecto.ConsultarReservasController">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="917.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tipo%20de%20habitacion.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="61.0" layoutY="129.0" prefHeight="348.0" prefWidth="796.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="242.0" layoutY="51.0" text="Usuario" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="123.0" text="Reserva" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="usuarioReserva" layoutX="346.0" layoutY="51.0" prefWidth="150.0" />
+            <ComboBox fx:id="idreserva" layoutX="346.0" layoutY="128.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+      <Label layoutX="248.0" layoutY="53.0" text="Consultar Reservas" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="informacion" layoutX="108.0" layoutY="303.0" prefHeight="162.0" prefWidth="659.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="buscarReserva" layoutX="421.0" layoutY="492.0" mnemonicParsing="false" onAction="#handleBotonBuscarReserva" prefHeight="45.0" prefWidth="94.0" stylesheets="@../css/BotonAceptar.css" text="Buscar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="atras" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBotonAtras" prefHeight="45.0" prefWidth="87.0" stylesheets="@../css/Atras-Reservas.css" text="Volver">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
