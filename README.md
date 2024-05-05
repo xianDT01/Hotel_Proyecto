@@ -22,9 +22,8 @@ El proyecto está organizado en los siguientes paquetes:
 
 - **javahotelesproyecto**: Contiene las clases relacionadas con la interfaz de usuario y la lógica de la aplicación.
 - **DataBase**: Contiene la clase `GestorDB` para interactuar con la base de datos SQLite.
-- 
 # SoftWare a usar:
-# SQLite
-# Apache NetBeans
-# JavaFX
-# Scene Builder
+ SQLite
+ Apache NetBeans
+ JavaFX
+ Scene Builder
